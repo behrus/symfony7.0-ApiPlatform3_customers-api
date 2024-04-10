@@ -1,0 +1,25 @@
+/.idea
+/changelog.lock
+
+###> symfony/framework-bundle ###
+/.env*
+/tools
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> phpstan/phpstan ###
+/phpstan.neon
+###< phpstan/phpstan ###
+
