@@ -21,6 +21,7 @@ use Symfony\Component\Validator\Constraints as Assert;
     denormalizationContext: [
         'groups' => ['country:write'],
     ],
+    security: 'is_granted("ROLE_USER")',
 )]
 class Country
 {

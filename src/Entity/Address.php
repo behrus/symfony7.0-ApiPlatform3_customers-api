@@ -38,6 +38,7 @@ use Symfony\Component\Serializer\Annotation\SerializedName;
     denormalizationContext: [
         'groups' => ['address:write', 'customer:write'],
     ],
+    security: 'is_granted("ROLE_USER")',
 )]
 class Address
 {

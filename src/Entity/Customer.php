@@ -20,7 +20,8 @@ use Symfony\Component\Serializer\Annotation\Groups;
 #[ApiResource(
     normalizationContext: ['groups' => ['customer:read']],
     denormalizationContext: ['groups' => ['customer:write', 'address:write']],
-),
+    security: 'is_granted("ROLE_USER")',
+    ),
     ApiFilter(
         SearchFilter::class,
         properties: [

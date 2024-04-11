@@ -14,13 +14,14 @@ use Symfony\Component\Validator\Constraints as Assert;
 #[ORM\Entity(repositoryClass: CityRepository::class)]
 #[ORM\HasLifecycleCallbacks]
 #[ApiResource(
-    description: 'City.',
+    description: 'City',
     normalizationContext: [
         'groups' => ['address:read', 'city:read'],
     ],
     denormalizationContext: [
         'groups' => ['city:write'],
     ],
+    security: 'is_granted("ROLE_USER")',
 )]
 class City
 {
