@@ -30,7 +30,7 @@ Die Endpoints können über die Webseite ausgeführt werden. Allerdings eine Aut
 **Für die Entwicklung und Interaktion mit den Endpoints wurde der Api Client "Postman" benutzt. Mit Postman wurde auch die eingerichtete Auth getestet.**
 
 
-## CRUD auf die Endpoins
+## CRUD auf die Endpoints
 
 Die Vorgaben zu der Aufgabe führten zur Entstehung der u.s. Endpoins mit folgenden Funktionalitäten:
 
@@ -69,7 +69,7 @@ Der Workflow für Auth ist wie folgt:
 
 Alle Endpoints sind nur für Benutzer mit der Role "ROLE_USER" erreichbar.
 
-Zusätzlich: die users und api_tokens Endpoint dürfen nur von Benutzern mit der "ROLE_ADMIN" erreicht werden.  
+Zusätzlich: die users und api_tokens Endpoints dürfen nur von Benutzern mit der "ROLE_ADMIN" erreicht werden.  
 Diese Einstellungen sind natürlich sehr allgemein und mussten weiter verfeinert werden mit Vergabe von Rechten für die Methoden der Endpoints  sowie mit "Voters" (Ownership) in Symfony.
 
 ## Http Header Einstellungen für die Interaktion mit den Endpoints
