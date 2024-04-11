@@ -95,11 +95,6 @@ Es gibt für die beiden Entitie City und Country Data Fixtures, die in den Tests
 
 ## Offene Probleme
 
-- Api Platform legt bei der PUT Methode einen neuen Datensatz an, wenn  
-  email Feld als unique gesetzt ist.  Was letztlich zu  
-  ConstraintValidation Exception führt, wenn man beim PUT die  
-  Emailadresse nicht ändert. Das ist ein Bug, den ich nicht mehr  
-  beheben könnte.
 - Post von Embedded Relations wird nicht persistiert. Da Customer in  
   einer OneToMany Beziehung zur Adresse steht, bietet sich an beim  
   Anlegen des Customers auch die Adresse mit einzutragen, um so weiteren  
